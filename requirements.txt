@@ -1,15 +1,15 @@
-ipyleaflet>=0.14.0
-ipywidgets>=7.7.1
-matplotlib>=3.7.0
-numpy>=1.24.2
-opencv-python>=4.1.2
-pandas>=2.3.3
-psycopg2-binary>=2.9.3
-pymysql>=1.0.2
-python-dotenv>=0.20.0
-requests>=2.27.1
-scikit-learn
-seaborn>=0.12.2
-sqlalchemy>=2.0.38
-sympy>=1.10.1
-xgboost
+# Dependencias del proyecto, con versiones fijadas para que cualquiera
+# que clone el repositorio obtenga exactamente el mismo entorno.
+
+# Datos y gráficos
+pandas==2.3.3
+matplotlib==3.10.7
+
+# Inferencia con modelos de Hugging Face (PyTorch solo CPU: más ligero)
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.9.1+cpu
+transformers==4.57.6
+
+# Ejecución del notebook desde la terminal
+ipykernel==6.30.1
+nbconvert==7.16.6
